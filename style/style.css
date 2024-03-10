@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(244, 244, 244);
+    margin: auto;
+    padding: 0ch 1ch;
+    color: black;
+}
+.navbar {
+    margin: 50px 35px 25px;
+    display: flex;
+    align-items: center;
+    height: 15px;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    z-index: 999; 
+}
+/*  */
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+.navbar ul li  {
+    display: flex;
+    font-size: 15px;
+    margin: 0 10px;
+    font-family: 'Bespoke Slab', sans-serif;
+  
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: blue;
+}
+.navbar ul li a:hover{
+    color: rgb(43, 95, 210);
+}
+
+.about-content p{
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    /* color: white; */
+    
+    
+}
+.about-section {
+    padding-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    /* color: white;  */}
+
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-links a {
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    display: inline-block;
+    color: blue;
+    margin: 5px; 
+    text-decoration: none;
+}
+
+.social-media-links a:hover {
+    color: rgb(43, 95, 210);
+ }
+.mywork-section {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    /* color: white; */
+}
+.mywork-content a {
+    text-decoration: none;
+    color: rgb(90, 141, 252);
+}
+.mywork-content a:hover {
+    color: rgb(161, 222, 255);
+ }
+
+.favlinks-section{
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    /* color: white; */
+}
+.favlinks-content a{
+    text-decoration: none;
+    color: rgb(90, 141, 252);
+}
+.favlinks-content a:hover{
+    color: rgb(161, 222, 255);
+
+}
+.posts-section{
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Bespoke Slab', sans-serif;
+    /* color: white; */
+}
+@media only screen and (max-width: 600px) {
+    .about-section{
+        padding-top: 14vh;
+    }
+    .navbar {
+        width: 100%; /* Make the navbar full width */
+        justify-content: center; 
+        margin: 65px 10px;/* Center the navbar */
+    }
+    .navbar ul li {
+        font-size:14px;
+    }
+
+}
+ 
+
+
+ 
