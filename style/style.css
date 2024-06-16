@@ -45,13 +45,16 @@ body{
 
 
 }
-
+.about-content img{
+    width: 70px;
+}
 .about-content p{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px; 
 }
+
 .about-content p a{
     text-decoration: none;
     color: rgb(159, 105, 251);
