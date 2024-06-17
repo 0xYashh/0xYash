@@ -6,35 +6,30 @@ body{
     color: rgb(255, 255, 255);
 }
 .navbar {
-    margin: 50px 35px 25px;
+    margin: 20px 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 15px;
-    position: fixed;
-    top: 0; 
-    right: 0; 
-    z-index: 999; 
+    height: 50px;
 }
-/*  */
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
-    padding: 15px;
-    
+    padding: 0;
 }
 
-.navbar ul li  {
+.navbar ul li {
     display: flex;
     font-size: 15px;
     margin: 0 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
+
 
 .navbar ul li a {
     text-decoration: none;
@@ -69,7 +64,7 @@ body{
 }
 
 .about-section {
-    padding-top: 25vh;
+    padding: 5vh 45vh 0 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +95,7 @@ body{
 
  }
 .mywork-section {
-    padding-top: 30vh;
+    padding: 30vh 45vh 0 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +116,7 @@ body{
  }
 
 .favlinks-section{
-    padding-top: 15vh;
+    padding: 5vh 45vh 0 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +135,7 @@ body{
 
 }
 .posts-section{
-    padding-top: 15vh;
+    padding: 15vh 45vh 0 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,10 +143,11 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
     .about-section{
-        padding-top: 14vh;
+        padding-top: 0vh;
     }
     .navbar {
         width: 100%; /* Make the navbar full width */
@@ -160,6 +156,12 @@ body{
     }
     .navbar ul li {
         font-size:14px;
+    }
+    .mywork-section{
+        padding-top: 10vh;
+    }
+    .favlinks-section{
+        padding-top: 0vh;
     }
 
 }
