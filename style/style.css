@@ -45,8 +45,12 @@ body{
 
 
 }
-.about-content img{
+#mypfp {
     width: 70px;
+}
+#inspire {
+    width: 400px;
+    height: 230px;
 }
 .about-content p{
     font-family: "Poppins", sans-serif;
