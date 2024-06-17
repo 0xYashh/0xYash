@@ -146,6 +146,10 @@ body{
     font-style: normal;
     text-decoration: none;
 }
+#books {
+    width: 450px;
+    height: 130px;
+}
 @media only screen and (max-width: 600px) {
     .about-section{
         padding: 0vh 0vh 0vh 0vh ;
@@ -167,7 +171,15 @@ body{
 
     }
     .posts-section{
-        padding: 22vh 0vh 0vh 0vh;
+        padding: 16vh 0vh 0vh 0vh;
+    }
+    #inspire{
+        width: 300px;
+        height: 180px;
+    }
+    #books{
+        width: 300px;
+        height: 110px;
     }
 
 }
