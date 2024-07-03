@@ -92,7 +92,7 @@ body{
 
  }
 .mywork-section {
-    padding: 30vh 45vh 0 45vh;
+    padding: 10vh 45vh 0 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,7 @@ body{
         font-size:14px;
     }
     .mywork-section{
-        padding: 22vh 0vh 0vh 0vh;
+        padding: 10vh 0vh 0vh 0vh;
      
     }
     .mywork-content{
