@@ -1,32 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
     <title>my-work</title>
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=recia@300&f[]=switzer@300&f[]=clash-display@1&f[]=nippo@300&f[]=clash-grotesk@400&f[]=jet-brains-mono@200&f[]=poppins@201,400,200&f[]=sharpie@400,300&f[]=satoshi@500,701,300,401&f[]=supreme@200&f[]=bespoke-slab@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400&display=swap');
+
+        body {
+            background-color: #1c0a25;
+            color: #d3d0d0;
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            background-color: #42194e92;
+            border: 5px ;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: hsl(293, 93%, 76%);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .section-title {
+            color: #ee88fb;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            color: #ee88fb;
+            text-decoration: none;
+        }
+
+        .project-description {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <ul><li><a href="/index.html">[about-me]</a></li>
-                <li><a href="/projects/index.html">[my-work]</a></li>
-                <li><a href="/fav-links/index.html">[fav-links]</a></li> 
-                <li><a href="/post-section/index.html">[posts]</a></li>
-            </ul>
- 
-       </div>
-    
-</header>
-    <main>
-        <section class="mywork-section">
-            <div class="mywork-content">
-            <p><a href="https://0xgalactica.vercel.app/"> >galactica</a> : a platform to innovate, craft, and share your vision. 
-            <br></p> 
-            </div>
-        </section>
-    </main>
-    <script src="/js/script.js"></script>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">[about-me]</a></li>
+                    <li><a href="/projects/index.html">[my-work]</a></li>
+                    <li><a href="/fav-links/index.html">[fav-links]</a></li>
+                    <li><a href="/post-section/index.html">[posts]</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="mywork-section">
+                <div class="section-title"></div>
+                <div class="project">
+                    <a href="https://0xgalactica.vercel.app/" class="project-title">galactica</a>
+                    <p class="project-description">a platform to innovate, craft, and share your vision.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

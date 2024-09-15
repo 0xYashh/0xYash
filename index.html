@@ -1,72 +1,278 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xYash</title>
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
-    <link
-        href="https://api.fontshare.com/v2/css?f[]=recia@300&f[]=switzer@300&f[]=clash-display@1&f[]=nippo@300&f[]=clash-grotesk@400&f[]=jet-brains-mono@200&f[]=poppins@201,400,200&f[]=sharpie@400,300&f[]=satoshi@500,701,300,401&f[]=supreme@200&f[]=bespoke-slab@300&display=swap"
-        rel="stylesheet">
+    <title>Yash's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400&display=swap');
+
+        body {
+            background-color: #1c0a25;
+            color: #d3d0d0;
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            background-color: #42194e92;
+            border: 5px ;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: hsl(293, 93%, 76%);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        h1 {
+            color: #e7c8ff;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            color: #ee88fb;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .inspire {
+            width: 390px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: 48%;
+        }
+
+        .section-title {
+            color: #ee88fb;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project,
+        .fav-link {
+            margin-bottom: 15px;
+        }
+
+        .project-title,
+        .fav-link a {
+            color: #ee88fb;
+            text-decoration: none;
+        }
+
+        .project-description,
+        .fav-link-description {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .posts {
+            margin-top: 30px;
+        }
+
+        .post {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .post:hover {
+            background-color: #2a2a2a;
+        }
+
+        .post-date {
+            color: #78dce8;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .post-title {
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .post-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 10px;
+            height: 1px;
+            background-color: #3a3a3a;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ee88fb;
+            text-decoration: none;
+        }
+
+        .location-icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .location-icon path {
+            fill: #ee88fb;
+        }
+
+        @media (max-width: 600px) {
+            .columns {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">[home]</a></li>
+                    <li><a href="/projects/index.html">[my-work]</a></li>
+                    <li><a href="/fav-links/index.html">[fav-links]</a></li>
+                    <li><a href="/post-section/index.html">[posts]</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="navbar">
-            <ul>
-                <li><a href="">[about-me]</a></li>
-                <li><a href="/projects/index.html">[my-work]</a></li>
-                <li><a href="/fav-links/index.html">[fav-links]</a></li>
-                <li><a href="/post-section/index.html">[posts]</a></li>
+        <main>
+            <h1>yash ⚡</h1>
+            <div class="info">
+                <span>
+                    <svg class="location-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 128">
+                        <path
+                            d="m102.128 96.851 6.3 14.173a1.75 1.75 0 1 0 3.2-1.422l-6.3-14.173a1.75 1.75 0 1 0-3.2 1.422z" />
+                        <path
+                            d="m123.1 120.649-17.69-39.811a1.75 1.75 0 0 0-1.6-1.039H83.831C89.219 71.13 93.938 62 96.778 53.651a43.164 43.164 0 0 0 2.657-13.466 35.436 35.436 0 1 0-70.871 0 43.174 43.174 0 0 0 2.657 13.467c2.84 8.353 7.56 17.478 12.948 26.147H24.19a1.75 1.75 0 0 0-1.6 1.039L4.9 120.649a1.75 1.75 0 0 0 1.6 2.461h115a1.75 1.75 0 0 0 1.6-2.461zM32.064 40.186a31.936 31.936 0 1 1 63.871 0 39.8 39.8 0 0 1-2.471 12.34c-3.041 8.945-8.311 18.822-14.24 28.026l-.037.058A194.664 194.664 0 0 1 64 101.136a194.667 194.667 0 0 1-15.188-20.525c-.013-.02-.024-.04-.038-.059-5.929-9.2-11.2-19.081-14.239-28.025a39.812 39.812 0 0 1-2.471-12.341zM9.192 119.61 25.327 83.3H46.4a194.324 194.324 0 0 0 16.29 21.663 1.75 1.75 0 0 0 2.629 0A194.313 194.313 0 0 0 81.6 83.3h21.068l16.135 36.311z" />
+                        <path
+                            d="M64 58.775a18.592 18.592 0 1 0-18.592-18.591A18.613 18.613 0 0 0 64 58.775zm0-33.684a15.092 15.092 0 1 1-15.092 15.093A15.109 15.109 0 0 1 64 25.092z" />
+                    </svg>
+                    noida, india
+                </span><br>
 
-            </ul>
-        </div>
-
-
-    </header>
-    <main>
-        <img src="" alt="">
-        <section class="about-section">
-            <div class="about-content">
-                <img id="mypfp" src="img/mypfp.jpg" alt="mypfp">
-                <p>>hi! i am yash --
-                    a curious guy exploring ai.
-                    <br>>coder -- rn coding in python.
-
-                    <!-- <br>>currently i'm building <a href="https://0xgalactica.vercel.app">galactica</a> a community
-                    platform for researchers and techies<a href="https://buildspace.so/"> @buildspace</a> -->
-                    <!-- nights&weekends s5 (alterok). -->
-                    <br>>streetphotographer -- i like to capture moments on streets and post them on instagram.
-                    <br>>what inspires me? this.
-
-                </p>
-                <img id="inspire" src="img/inspire2.jpg" alt="inspire">
-                <p>>my handles (if you wanna connect):
-                <div class="social-media-links"><a href="https://www.instagram.com/yash.pxl/">[instagram]</a><a
-                        href="https://github.com/0xYashh">[github]</a><a href="https://X.com/0xYash">[x]</a>
-                    <a href="https://www.linkedin.com/in/yashhkr/">[linkedin]</a>
-                </div>
-                </p>
             </div>
 
-        </section>
+            <p>hi im an engineering student who is interested in machine learning, startups & photography. also i like anime and movies.
+            <p>i code in -- "python" , "c" ;</p>
+            </p>
+            <p>what inspires me ?</p> <img class="inspire" src="img/inspire.jpg" alt="inspire">
 
+            <div class="columns">
+                <div class="column">
+                    <div class="section">
+                        <div class="section-title">my work</div>
+                        <div class="project">
+                            <a href="https://0xgalactica.vercel.app/" class="project-title">galactica</a>
+                            <p class="project-description">a platform to innovate, craft, and share your vision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="section">
+                        <div class="section-title">fav links</div>
+                        <div class="fav-link">
+                            <a href="https://www.paulgraham.com/articles.html">paul graham essays</a>
+                            <p class="fav-link-description">essays on startups and tech by paul graham.</p>
+                        </div>
+                        <div class="fav-link">
+                            <a href="https://effectiveaccelerationism.substack.com/">e/acc</a>
+                            <p class="fav-link-description">newsletter on effective accelerationism</p>
+                        </div>
+                        <div class="fav-link">
+                            <a
+                                href="https://docs.google.com/document/d/e/2PACX-1vQD8IlBotGdBxp3BnXkSjk8bNZlPV_0EH9ZA6wHd5dNf-BLSiwXUinvgv8ZoBEnNyTCF-chWO30NRw0/pub">keeping
+                                up with agi</a>
+                            <p class="fav-link-description">blog page on agi by <a
+                                    href="https://twitter.com/cto_junior">@cto_junior</a></p>
+                        </div>
+                        <a href="/fav-links/index.html" style="color:#ee88fb;">more links →</a>
+                    </div>
+                </div>
+            </div>
 
-    </main>
-    <script src="/js/script.js">
+            <div class="posts">
+                <div class="section-title">recent posts</div>
+                <p>will post soon anon ! </p>
+                <!-- <a href="#" style="text-decoration: none; color: inherit;">
+                    <div class="post">
+                        <span class="post-date">2024-08-15</span>
+                        <span class="post-title">a weekend love story - raylib/zig</span>
+                    </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <div class="post">
+                        <span class="post-date">2022-09-17</span>
+                        <span class="post-title">speech to text in realtime</span>
+                    </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <div class="post">
+                        <span class="post-date">2021-09-19</span>
+                        <span class="post-title">what is KDS? 📊</span>
+                    </div>
+                </a>
+            </div>
+        </main> -->
 
-    </script>
-    <!-- Vercel Web Analytics -->
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+        <footer class="footer">
+            <a href="https://github.com/0xYashh">github</a> / <a href="https://x.com/0xyash">x/twtr</a> / <a href="https://instagtam.com/yash.pxl">insta</a>--photography
 
-    <!-- Vercel Speed Insights -->
-    <script type="module">
-        import { injectSpeedInsights } from 'https://cdn.skypack.dev/@vercel/speed-insights';
-        injectSpeedInsights();
-    </script>
+        </footer>
+    </div>
 </body>
+
 </html>
