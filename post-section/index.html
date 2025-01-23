@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posts</title>
+    <title>Posts</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400&display=swap');
 
         body {
-            background-color: #1c0a25;
-            color: #d3d0d0;
+            background-color: #0d1117;
+            color: #c9d1d9;
             font-family: 'JetBrains Mono', monospace;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,49 +20,73 @@
 
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             padding: 20px;
             box-sizing: border-box;
         }
 
         header {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             width: 100%;
             text-align: center;
         }
 
         nav ul {
-            background-color: #42194e92;
-            border: 5px ;
+            background-color: #161b22;
+            padding: 10px;
+            border-radius: 8px;
             list-style-type: none;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
         }
 
         nav ul li {
-            display: inline;
-            margin-right:8px;
+            margin: 0 10px;
         }
 
         nav a {
-            color: hsl(293, 93%, 76%);
+            color: #58a6ff;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
+            font-weight: 400;
+            transition: color 0.3s ease;
         }
 
-        .section-title {
-            color: #ee88fb;
-            font-size: 18px;
-            margin-bottom: 9px;
+        nav a:hover {
+            color: #79c0ff;
+        }
+
+        .posts-section {
+            margin-top: 30px;
+            width: 100%;
         }
 
         .posts-content {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .posts-content img {
             max-width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .post-message {
+            font-size: 16px;
+            color: #8b949e;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #79c0ff;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-align: center;
         }
     </style>
 </head>
@@ -82,10 +105,10 @@
 
         <main>
             <section class="posts-section">
-                <div class="section-title"></div>
+                <div class="section-title">My learnings in a documented way.</div>
                 <div class="posts-content">
-                    <img id="books" src="/img/ss.jpg" alt="ss">
-                    <p>will post soon anon!</p>
+                    <img id="books" src="/img/ss.jpg" alt="Post Image">
+                    <p class="post-message">Will post soon, stay tuned!</p>
                 </div>
             </section>
         </main>
